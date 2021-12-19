@@ -1,0 +1,28 @@
+{
+  "name": "heinrich",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "deployCommands": "node src/deploy-commands.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.9.0",
+    "@discordjs/opus": "^0.7.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordjs/voice": "^0.7.5",
+    "discord-api-types": "^0.25.2",
+    "discord.js": "^13.3.1",
+    "distube": "^3.0.4",
+    "dotenv": "^10.0.0",
+    "ffmpeg-static": "^4.4.0",
+    "libsodium": "^0.7.9",
+    "libsodium-wrappers": "^0.7.9",
+    "nodemon": "^2.0.15",
+    "random-reddit": "^2.0.3"
+  }
+}
