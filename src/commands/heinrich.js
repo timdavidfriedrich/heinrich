@@ -16,20 +16,39 @@ module.exports = {
                     .setColor("DARK_BLUE")
                     .addFields([
                         {
+                            name: "/lol",
+                            value: "Funktioniert noch nicht",
+                            inline: true
+                        },
+                        {
+                            name: "/mc",
+                            value: "Minecraft-Rezept",
+                            inline: true
+                        },
+                        {
                             name: "/meme",
-                            value: "Random Meme.",
+                            value: "Zufälliges Meme",
                             inline: true
                         },
                         {  
                             name: "/rickroll", 
-                            value: "Rickrolls vom Feinsten.", 
+                            value: "Rickroll vom Feinsten",
+                            inline: true
+                        },
+                        {  
+                            name: "/wiki", 
+                            value: "Wikipedia-Eintrag",
                             inline: true
                         },
                         {
                             name: "/zitat",
-                            value: "Hebt Text hervor.",
+                            value: "Hebt Text hervor",
                             inline: true
                         },
+                        {
+                            name: "Weiteres:",
+                            value: `Reagiere mit :star: auf Nachrichten, um sie im "markiert"-Channel zu speichern!`,
+                        }
                     ])
                 ]
             })

@@ -11,9 +11,12 @@ module.exports = {
      */
     execute(reaction) {
 
+        //TODO: Markieren für ALLE Nachrichten möglich
+        //TODO: Delete if Count > 1, ansonsten anpinnen
+
         /// Link zur Nachricht, auf die reagiert wurde. (Springt innerhalb Discords direkt zum Original)
         message_url = `https://discordapp.com/channels/${reaction.message.guildId}/${reaction.message.channelId}/${reaction.message.id}`
-        console.log(message_url)
+        marked_url = `https://discordapp.com/channels/${reaction.message.guildId}/${marked_channel}/${reaction.message.id}`
 
         /// Stern-Reaktion auf Nachricht?
         if (reaction.emoji.name == "⭐") {
@@ -49,5 +52,25 @@ module.exports = {
                 }
             }
         }
+
     }
 }
+
+/*
+        /// Stern-Reaktion auf Nachricht?
+        if (reaction.emoji.name == "⭐") {
+
+            reaction.remove()
+
+            if (reaction.count > 1) {
+                console.log(`Lösche: "${reaction.message.content}"`)
+                reaction.message.delete()
+
+            } else {
+                
+                
+
+            }
+
+        }
+*/
